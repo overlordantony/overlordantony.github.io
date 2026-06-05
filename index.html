@@ -1,417 +1,220 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-
-    <!--====== Title ======-->
-    <title>Web Developer - Marco</title>
-
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
-
-    <!--====== Slick CSS ======-->
-    <link rel="stylesheet" href="assets/css/animate.css">
-
-    <!--====== LineIcons CSS ======-->
-    <link rel="stylesheet" href="assets/css/lineicons.css">
-
-    <!--====== Bootstrap CSS ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <!--====== Default CSS ======-->
-    <link rel="stylesheet" href="assets/css/default.css">
-
-    <!--====== Style CSS ======-->
-    <link rel="stylesheet" href="assets/css/style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Axiom Cipher — Cada solución, codificada con precisión.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="icon" href="./assets/img/Eye.png" type="image/x-icon">
 </head>
-
 <body>
-    <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-  
-    <!--====== PRELOADER PART START ======-->
 
-    <div class="preloader">
-        <div class="loader">
-            <div class="ytp-spinner">
-                <div class="ytp-spinner-container">
-                    <div class="ytp-spinner-rotator">
-                        <div class="ytp-spinner-left">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                        <div class="ytp-spinner-right">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">Axiom<span>Cipher</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-inner">
+      <div class="hero-tag">Desarrollo web · Aplicaciones · Soluciones a medida</div>
+      <h1>
+        Cada<br/>
+        solución,<br/>
+        <span class="accent">codificada</span><br/>
+        <span class="dim">con precisión.</span>
+      </h1>
+      <p class="hero-sub">
+        Desarrollo web profesional para negocios que necesitan resultados reales — rápidos, sólidos y sin excusas.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Ver proyectos</a>
+        <a href="#contact" class="btn btn-secondary">Hablemos</a>
+      </div>
     </div>
 
-    <!--====== PRELOADER PART ENDS ======-->
+    <div class="hero-terminal">
+      <div class="terminal-bar">
+        <span class="t-red"></span>
+        <span class="t-yellow"></span>
+        <span class="t-green"></span>
+      </div>
+      <div class="terminal-line"><span class="t-cmd">~/axiom-cipher</span> <span class="t-comment">$</span></div>
+      <div class="terminal-line"><span class="t-comment">// stack listo</span></div>
+      <div class="terminal-line"><span class="t-string">PHP</span> · <span class="t-string">JS</span> · <span class="t-string">Laravel</span> · <span class="t-string">WordPress</span></div>
+      <div class="terminal-line"><span class="t-string">Python</span> · <span class="t-string">MySQL</span> · <span class="t-string">HTML/CSS</span></div>
+      <div class="terminal-line" style="margin-top:0.5rem"><span class="t-comment">$ </span>ready<span class="blink"></span></div>
+    </div>
+  </section>
 
-
-    <!--====== HEADER PART START ======-->
-
-    <section class="header_area">
-        <div class="header_navbar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="index.html">
-                                <img width="200px" src="assets/images/Owl.png" alt="Logo">
-                            </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                            </button>
-
-                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                                <ul id="nav" class="navbar-nav ml-auto">
-                                    <li class="nav-item active">
-                                        <a class="page-scroll" href="#home">Inicio<span></span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#about">Sobre mí<span></span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#services">Servicios<span></span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#project">Portafolio<span></span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#pricing">Precios<span></span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#work">Experiencia<span></span></a>
-                                    </li>
-                                </ul>
-                            </div> <!-- navbar collapse -->
-                        </nav> <!-- navbar -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- header navbar -->
-
-        <div id="home" class="header_hero">
-            <ul class="header_social d-none d-lg-block">
-                <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
-                <li><a href="#"><i class="lni lni-instagram-filled"></i></a></li>
-                <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-            </ul>
-            <div class="container">
-                <div class="row align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-lg-6">
-                        <div class="header_hero_content mt-45">
-                            <h5 class="header_sub_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Hola,</h5>
-                            <h2 class="header_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">Soy desarrollador web y de software</h2>
-                            <span class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Altamente experimentado en el desarrollo de sitios web personalizados de Wordpress y Aplicaciones Web</span>
-                            <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
-                            <a href="https://rebrand.ly/freelancer-ud" rel="nofollow" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.4s">Purchase Now</a>
-                        </div> <!-- header hero content -->
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-7">
-                        <div class="header_hero_image mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="1.8s">
-                            <img src="assets/images/hero.png" alt="hero">
-                        </div> <!-- header hero image -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-            <div class="header_hero_shape d-none d-lg-block"></div> <!-- header hero shape -->
-        </div> <!-- header hero -->
-    </section>
-
-    <!--====== HEADER PART ENDS ======-->
-
-    <!--====== ABOUT PART START ======-->
-
-    <section id="about" class="about_area pt-70 pb-120">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-6 col-md-9">
-                    <div class="about_image mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                        <img src="assets/images/about_hero.png" alt="Hero">
-                        <div class="about_shape"></div>
-                    </div> <!-- about image -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="about_content mt-45 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                        <div class="section_title">
-                            <h5 class="sub_title">About</h5>
-                            <h3 class="main_title">Why You Hire Me?</h3>
-                            <ul class="line">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div> <!-- section title -->
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.</p>
-
-                        <div class="about_skills pt-15">
-                            <div class="skill_item mt-20">
-                                <div class="skill_header">
-                                    <h6 class="skill_title">UI/UX Design</h6>
-                                    <div class="skill_percentage">
-                                        <p><span class="counter">85</span>%</p>
-                                    </div>
-                                </div>
-                                <div class="skill_bar">
-                                    <div class="bar_inner">
-                                        <div class="bar progress_line" data-width="85"></div>
-                                    </div>
-                                </div>
-                            </div> <!-- skill item -->
-                            <div class="skill_item mt-20">
-                                <div class="skill_header">
-                                    <h6 class="skill_title">Web Design</h6>
-                                    <div class="skill_percentage">
-                                        <p><span class="counter">75</span>%</p>
-                                    </div>
-                                </div>
-                                <div class="skill_bar">
-                                    <div class="bar_inner">
-                                        <div class="bar progress_line" data-width="75"></div>
-                                    </div>
-                                </div>
-                            </div> <!-- skill item -->
-                            <div class="skill_item mt-20">
-                                <div class="skill_header">
-                                    <h6 class="skill_title">HTML/CSS</h6>
-                                    <div class="skill_percentage">
-                                        <p><span class="counter">90</span>%</p>
-                                    </div>
-                                </div>
-                                <div class="skill_bar">
-                                    <div class="bar_inner">
-                                        <div class="bar progress_line" data-width="90"></div>
-                                    </div>
-                                </div>
-                            </div> <!-- skill item -->
-                            <div class="skill_item mt-20">
-                                <div class="skill_header">
-                                    <h6 class="skill_title">Sketch</h6>
-                                    <div class="skill_percentage">
-                                        <p><span class="counter">65</span>%</p>
-                                    </div>
-                                </div>
-                                <div class="skill_bar">
-                                    <div class="bar_inner">
-                                        <div class="bar progress_line" data-width="65"></div>
-                                    </div>
-                                </div>
-                            </div> <!-- skill item -->
-                        </div> <!-- about skill -->
-                    </div> <!-- about content -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== ABOUT PART ENDS ======-->
-
-    <!--====== SERVICES PART START ======-->
-
-    <section id="services" class="services_area pt-115 pb-120">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section_title text-center pb-30">
-                        <h5 class="sub_title">Services</h5>
-                        <h3 class="main_title">Service I Provide</h3>
-                        <ul class="line">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single_service mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
-                        <div class="service_icon">
-                            <i class="lni lni-vector"></i>
-                        </div>
-                        <div class="service_content">
-                            <h4 class="service_title"><a href="#">Graphic Design</a></h4>
-                            <p>Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore magna aliqua.</p>
-                        </div>
-                    </div> <!-- single service -->
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single_service mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                        <div class="service_icon">
-                            <i class="lni lni-layout"></i>
-                        </div>
-                        <div class="service_content">
-                            <h4 class="service_title"><a href="#">Web Design</a></h4>
-                            <p>Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore magna aliqua.</p>
-                        </div>
-                    </div> <!-- single service -->
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single_service mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.8s">
-                        <div class="service_icon">
-                            <i class="lni lni-ux"></i>
-                        </div>
-                        <div class="service_content">
-                            <h4 class="service_title"><a href="#">UI/UX Design</a></h4>
-                            <p>Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore magna aliqua.</p>
-                        </div>
-                    </div> <!-- single service -->
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single_service mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
-                        <div class="service_icon">
-                            <i class="lni lni-code"></i>
-                        </div>
-                        <div class="service_content">
-                            <h4 class="service_title"><a href="#">Frontend Development</a></h4>
-                            <p>Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore magna aliqua.</p>
-                        </div>
-                    </div> <!-- single service -->
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single_service mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                        <div class="service_icon">
-                            <i class="lni lni-briefcase"></i>
-                        </div>
-                        <div class="service_content">
-                            <h4 class="service_title"><a href="#">Business Analysis</a></h4>
-                            <p>Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore magna aliqua.</p>
-                        </div>
-                    </div> <!-- single service -->
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single_service mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.8s">
-                        <div class="service_icon">
-                            <i class="lni lni-bullhorn"></i>
-                        </div>
-                        <div class="service_content">
-                            <h4 class="service_title"><a href="#">Digital Marketing</a></h4>
-                            <p>Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore magna aliqua.</p>
-                        </div>
-                    </div> <!-- single service -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== SERVICES PART ENDS ======-->
-
-
-
-
-    <!--====== CALL TO ACTION PART START ======-->
-
-    <section id="contact" class="call_to_action_area">
-        <div class="container">
-            <div class="call_to_action_wrapper wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="call_to_action_box d-md-flex justify-content-between align-items-center">
-                            <div class="call_to_action_content">
-                                <h3 class="action_title">You are using free lite version of Freelancer</h3>
-                                <ul class="line">
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                                <p>Please, purchase full version to get all elements, features, footer credit removal permission and commercial license</p>
-                            </div> <!-- call to action content -->
-
-                            <div class="call_to_action_btn">
-                                <a href="https://rebrand.ly/freelancer-ud" rel="nofollow" class="main-btn">HIRE ME</a>
-                            </div> <!-- call to action btn -->
-                        </div> <!-- call to action box -->
-                    </div>
-                </div>  <!-- row -->
-            </div>  <!-- call to action wrapper -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== CALL TO ACTION PART ENDS ======-->
-
-    <!--====== FOOTER PART START ======-->
-
-    <footer id="footer" class="footer_area gray-bg pt-115 pb-120">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer_content text-center">
-                        <a href="#"><img width="250px" src="assets/images/Owl.png" alt="Logo"></a>
-                        <ul class="footer_social">
-                            <li><a href="#"><i class="lni lni-facebook"></i></a></li>
-                            <li><a href="#"><i class="lni lni-twitter"></i></a></li>
-                            <li><a href="#"><i class="lni lni-instagram"></i></a></li>
-                            <li><a href="#"><i class="lni lni-linkedin"></i></a></li>
-                        </ul>
-                        <span class="email">OverlordAntony@gmail.com</span>
-                        <ul class="footer_menu">
-                            <li><a href="#">Inicio</a></li>
-                            <li><a href="#">Sobre mí</a></li>
-                            <li><a href="#">Servicios</a></li>
-                            <li><a href="#">Portafolio</a></li>
-                            <li><a href="#">Precios</a></li>
-                            <li><a href="#">Contacto</a></li>
-                        </ul>
-                        <p class="credit pt-45">Desarrollado por <a href="#" rel="nofollow">Marco</a></p>
-                    </div> <!-- footer content -->
-                </div>
-            </div>  <!-- row -->
-        </div> <!-- container -->
-    </footer>
-
-    <!--====== FOOTER PART ENDS ======-->
-
-    <!--====== PART START ======-->
-
-<!--
-    <section class="">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-">
-                    
-                </div>
-            </div>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">Sobre mí</div>
+    <h2>Dev con criterio,<br/>no solo código.</h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          Más de <strong>6 años de experiencia</strong> construyendo soluciones web reales — desde sitios corporativos hasta sistemas complejos con autenticación, bases de datos y lógica de negocio personalizada.
+        </p>
+        <p>
+          Trabajo con rapidez sin sacrificar calidad. Si necesitas un sitio en WordPress listo en días o una aplicación web a medida, <strong>aquí es.</strong>
+        </p>
+        <p>
+          Me adapto al proyecto, no al revés. Cada solución se construye pensando en lo que realmente necesitas — sin plantillas genéricas, sin relleno.
+        </p>
+      </div>
+      <div class="reveal" style="transition-delay: 0.15s">
+        <div style="font-size:0.68rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--text-dim); margin-bottom:1rem;">Stack técnico</div>
+        <div class="stack-grid">
+          <div class="stack-item">WordPress</div>
+          <div class="stack-item">PHP / Laravel</div>
+          <div class="stack-item">JavaScript</div>
+          <div class="stack-item">HTML / CSS</div>
+          <div class="stack-item">Python / Django</div>
+          <div class="stack-item">MySQL / SQL</div>
+          <div class="stack-item">Java / Kotlin</div>
+          <div class="stack-item">Git / GitHub</div>
         </div>
-    </section>
--->
+      </div>
+    </div>
+  </section>
 
-    <!--====== PART ENDS ======-->
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-label">Servicios</div>
+    <h2>Lo que construyo.</h2>
+    <div class="services-grid reveal">
+      <div class="service-card">
+        <div class="service-num">01</div>
+        <span class="service-icon">⬡</span>
+        <h3>Sitios WordPress</h3>
+        <p>Sitios corporativos, tiendas WooCommerce, blogs y landing pages. Rápidos, optimizados y fáciles de administrar. Desde cero o sobre tu sitio actual.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">02</div>
+        <span class="service-icon">⬡</span>
+        <h3>Aplicaciones web</h3>
+        <p>Sistemas con lógica personalizada: paneles de administración, sistemas de reservas, plataformas con autenticación y bases de datos relacionales.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">03</div>
+        <span class="service-icon">⬡</span>
+        <h3>Desarrollo a medida</h3>
+        <p>Plugins, integraciones, módulos personalizados. Si tienes una necesidad específica que no encaja en una plantilla, es exactamente el tipo de proyecto que me interesa.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- row -->
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label">Proyectos</div>
+    <h2>Trabajo real,<br/>resultados reales.</h2>
+    <div class="projects-grid">
 
+      <div class="project-card reveal">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-tag">E-commerce</span>
+          <div class="project-thumb-label">Tienda en línea</div>
+        </div>
+        <div class="project-info">
+          <h3>Tienda en línea</h3>
+          <p>Desarrollo completo de tienda e-commerce con catálogo, carrito y pasarela de pagos.</p>
+          <div class="project-tech">
+            <span class="tech-tag">WordPress</span>
+            <span class="tech-tag">WooCommerce</span>
+            <span class="tech-tag">PHP</span>
+          </div>
+        </div>
+      </div>
 
-    <!--====== Jquery js ======-->
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+      <div class="project-card reveal" style="transition-delay:0.1s">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-tag">Reservas</span>
+          <div class="project-thumb-label">Hotel & Reservas</div>
+        </div>
+        <div class="project-info">
+          <h3>Página de hotel con sistema de reservas</h3>
+          <p>Sitio con sistema de disponibilidad y reservas integrado, panel de administración personalizado.</p>
+          <div class="project-tech">
+            <span class="tech-tag">WordPress</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">JS</span>
+          </div>
+        </div>
+      </div>
 
-    <!--====== Bootstrap js ======-->
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+      <div class="project-card reveal" style="transition-delay:0.2s">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-tag">Corporativo</span>
+          <div class="project-thumb-label">Landing + Sistema interno</div>
+        </div>
+        <div class="project-info">
+          <h3>Landing corporativa + desarrollo interno</h3>
+          <p>Página pública de presentación con sistema privado de gestión interna para el equipo.</p>
+          <div class="project-tech">
+            <span class="tech-tag">WordPress</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">JS</span>
+            <span class="tech-tag">CSS</span>
+          </div>
+        </div>
+      </div>
 
+      <div class="project-card reveal" style="transition-delay:0.3s">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-tag">Fintech</span>
+          <div class="project-thumb-label">Plataforma financiera</div>
+        </div>
+        <div class="project-info">
+          <h3>Plataforma financiera</h3>
+          <p>Desarrollo web para empresa del sector financiero con módulos personalizados y autenticación.</p>
+          <div class="project-tech">
+            <span class="tech-tag">WordPress</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+          </div>
+        </div>
+      </div>
 
-    <!--====== Appear js ======-->
-    <script src="assets/js/jquery.appear.min.js"></script>
+    </div>
+  </section>
 
-    <!--====== Scrolling Nav js ======-->
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/scrolling-nav.js"></script>
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label">Contacto</div>
+    <h2>¿Tienes un proyecto?</h2>
+    <div class="contact-inner reveal">
+      <p>Cuéntame qué necesitas. Respondo rápido y sin rodeos.</p>
+      <div class="contact-links">
+        <a href="mailto:overlordantony@email.com" class="contact-link">✉ Email</a>
+        <a href="https://wa.me/573015095667" target="_blank" class="contact-link">◈ WhatsApp</a>
+        <a href="https://github.com/overlordantony" target="_blank" class="contact-link">◎ GitHub</a>
+      </div>
+    </div>
+  </section>
 
-    <!--====== Main js ======-->
-    <script src="assets/js/main.js"></script>
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 <a href="#">Axiom Cipher</a>. Todos los derechos reservados.</span>
+    <span>Cada solución, codificada con precisión.</span>
+  </footer>
 
+  <script src="./assets/js/scripts.js"></script>
 </body>
-
 </html>
