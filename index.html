@@ -120,17 +120,56 @@
   <section id="projects">
     <div class="section-label">Proyectos</div>
     <h2>Trabajo real,<br/>resultados reales.</h2>
-    <div class="projects-grid">
 
-      <div class="project-card reveal">
+    <!-- FILTERS -->
+    <div class="project-filters reveal">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="wordpress">WordPress</button>
+      <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+      <button class="filter-btn" data-filter="laravel">Laravel</button>
+      <button class="filter-btn" data-filter="vanilla">Vanilla</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- WordPress corporativo -->
+      <div class="project-card reveal" data-category="wordpress"
+        data-title="Figdesis"
+        data-desc="Sitio web corporativo desarrollado en WordPress. Diseño institucional, gestión de contenidos y desarrollos personalizados internos."
+        data-url="https://figdesis.com/"
+        data-tech="WordPress,PHP,CSS,JS"
+        data-pdf="assets/screenshots/figdesis.pdf">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-tag">WordPress</span>
+          <div class="project-thumb-label">Figdesis</div>
+        </div>
+        <div class="project-info">
+          <h3>Figdesis</h3>
+          <p>Sitio corporativo con desarrollos personalizados y gestión de contenidos.</p>
+          <div class="project-tech">
+            <span class="tech-tag">WordPress</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">JS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- E-commerce -->
+      <div class="project-card reveal" data-category="ecommerce" style="transition-delay:0.05s"
+        data-title="Viva Hogar"
+        data-desc="Tienda en línea completa con catálogo de productos, carrito de compras y pasarela de pagos integrada. Desarrollada sobre WooCommerce con personalizaciones a medida."
+        data-url="https://www.vivahogar.com.co/"
+        data-tech="WordPress,WooCommerce,PHP,CSS"
+        data-pdf="assets/screenshots/vivahogar.pdf">
         <div class="project-thumb">
           <div class="project-thumb-pattern"></div>
           <span class="project-tag">E-commerce</span>
-          <div class="project-thumb-label">Tienda en línea</div>
+          <div class="project-thumb-label">Viva Hogar</div>
         </div>
         <div class="project-info">
-          <h3>Tienda en línea</h3>
-          <p>Desarrollo completo de tienda e-commerce con catálogo, carrito y pasarela de pagos.</p>
+          <h3>Viva Hogar</h3>
+          <p>Tienda en línea con catálogo, carrito y pagos integrados.</p>
           <div class="project-tech">
             <span class="tech-tag">WordPress</span>
             <span class="tech-tag">WooCommerce</span>
@@ -139,61 +178,286 @@
         </div>
       </div>
 
-      <div class="project-card reveal" style="transition-delay:0.1s">
+      <!-- WordPress hotel -->
+      <div class="project-card reveal" data-category="wordpress" style="transition-delay:0.1s"
+        data-title="Hoteles Dann Cali"
+        data-desc="Sitio web para cadena hotelera con sistema de reservas integrado, disponibilidad en tiempo real y panel de administración personalizado."
+        data-url="https://www.hotelesdanncali.com/"
+        data-tech="WordPress,PHP,MySQL,JS"
+        data-pdf="assets/screenshots/danncali.pdf">
         <div class="project-thumb">
           <div class="project-thumb-pattern"></div>
-          <span class="project-tag">Reservas</span>
-          <div class="project-thumb-label">Hotel & Reservas</div>
+          <span class="project-tag">WordPress</span>
+          <div class="project-thumb-label">Hoteles Dann Cali</div>
         </div>
         <div class="project-info">
-          <h3>Página de hotel con sistema de reservas</h3>
-          <p>Sitio con sistema de disponibilidad y reservas integrado, panel de administración personalizado.</p>
+          <h3>Hoteles Dann Cali</h3>
+          <p>Sitio hotelero con sistema de reservas y disponibilidad en tiempo real.</p>
           <div class="project-tech">
             <span class="tech-tag">WordPress</span>
             <span class="tech-tag">PHP</span>
             <span class="tech-tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- WordPress corporativo -->
+      <div class="project-card reveal" data-category="wordpress" style="transition-delay:0.15s"
+        data-title="Cali Valle Bureau"
+        data-desc="Sitio institucional para entidad de promoción turística y de inversión. Desarrollado en WordPress con integraciones y desarrollos personalizados."
+        data-url="https://calivallebureau.com/"
+        data-tech="WordPress,PHP,JS,CSS"
+        data-pdf="assets/screenshots/calivallebureau.pdf">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-tag">WordPress</span>
+          <div class="project-thumb-label">Cali Valle Bureau</div>
+        </div>
+        <div class="project-info">
+          <h3>Cali Valle Bureau</h3>
+          <p>Sitio institucional para entidad de promoción turística e inversión.</p>
+          <div class="project-tech">
+            <span class="tech-tag">WordPress</span>
+            <span class="tech-tag">PHP</span>
             <span class="tech-tag">JS</span>
           </div>
         </div>
       </div>
 
-      <div class="project-card reveal" style="transition-delay:0.2s">
+      <!-- WordPress universidad nueva -->
+      <div class="project-card reveal" data-category="wordpress" style="transition-delay:0.2s"
+        data-title="Unicatólica — Sitio nuevo"
+        data-desc="Rediseño y desarrollo completo del sitio web institucional de la Universidad Católica de Santiago de Cali. Arquitectura de contenidos, módulos personalizados y gestión editorial."
+        data-url="https://www.unicatolica.edu.co/"
+        data-tech="WordPress,PHP,JS,CSS,MySQL"
+        data-pdf="assets/screenshots/unicatolica-new.pdf">
         <div class="project-thumb">
           <div class="project-thumb-pattern"></div>
-          <span class="project-tag">Corporativo</span>
-          <div class="project-thumb-label">Landing + Sistema interno</div>
+          <span class="project-tag">WordPress</span>
+          <div class="project-thumb-label">Unicatólica — Web nueva</div>
         </div>
         <div class="project-info">
-          <h3>Landing corporativa + desarrollo interno</h3>
-          <p>Página pública de presentación con sistema privado de gestión interna para el equipo.</p>
+          <h3>Unicatólica — Sitio institucional nuevo</h3>
+          <p>Rediseño completo del sitio universitario con arquitectura de contenidos y módulos a medida.</p>
           <div class="project-tech">
             <span class="tech-tag">WordPress</span>
             <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- WordPress universidad anterior -->
+      <div class="project-card reveal" data-category="wordpress" style="transition-delay:0.25s"
+        data-title="Unicatólica — Sitio anterior"
+        data-desc="Mantenimiento, evolución y administración del sitio web institucional anterior de Unicatólica. Desarrollos personalizados, integraciones y soporte continuo durante años de operación."
+        data-url="https://old.unicatolica.edu.co/"
+        data-tech="WordPress,PHP,JS,CSS"
+        data-pdf="assets/screenshots/unicatolica-old.pdf">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-tag">WordPress</span>
+          <div class="project-thumb-label">Unicatólica — Web anterior</div>
+        </div>
+        <div class="project-info">
+          <h3>Unicatólica — Sitio institucional anterior</h3>
+          <p>Mantenimiento y evolución del sitio universitario con desarrollos personalizados continuos.</p>
+          <div class="project-tech">
+            <span class="tech-tag">WordPress</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">JS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vanilla directorio -->
+      <div class="project-card reveal" data-category="vanilla" style="transition-delay:0.3s"
+        data-title="Directorio Unicatólica"
+        data-desc="Directorio institucional de la universidad desarrollado en PHP, HTML, JS y CSS puro, sin frameworks. Sistema de búsqueda y filtrado de docentes y personal administrativo."
+        data-url="https://www.unicatolica.edu.co/directorio/"
+        data-tech="PHP,HTML,JS,CSS"
+        data-pdf="assets/screenshots/directorio.pdf">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-tag">Vanilla</span>
+          <div class="project-thumb-label">Directorio Unicatólica</div>
+        </div>
+        <div class="project-info">
+          <h3>Directorio institucional</h3>
+          <p>Sistema de directorio con búsqueda y filtrado, sin dependencias de framework.</p>
+          <div class="project-tech">
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">HTML</span>
             <span class="tech-tag">JS</span>
             <span class="tech-tag">CSS</span>
           </div>
         </div>
       </div>
 
-      <div class="project-card reveal" style="transition-delay:0.3s">
+      <!-- Laravel oferta académica -->
+      <div class="project-card reveal" data-category="laravel" style="transition-delay:0.35s"
+        data-title="Oferta Académica Unicatólica"
+        data-desc="Plataforma web en Laravel para visualización de oferta académica: pregrado, posgrado y educación continua. Gestión de programas, filtros dinámicos y formularios de interés."
+        data-url="https://tufuturoen.unicatolica.edu.co/public/pregrado"
+        data-tech="Laravel,PHP,MySQL,JS,CSS"
+        data-pdf="assets/screenshots/oferta-academica.pdf">
         <div class="project-thumb">
           <div class="project-thumb-pattern"></div>
-          <span class="project-tag">Fintech</span>
-          <div class="project-thumb-label">Plataforma financiera</div>
+          <span class="project-tag">Laravel</span>
+          <div class="project-thumb-label">Oferta Académica</div>
         </div>
         <div class="project-info">
-          <h3>Plataforma financiera</h3>
-          <p>Desarrollo web para empresa del sector financiero con módulos personalizados y autenticación.</p>
+          <h3>Oferta Académica Unicatólica</h3>
+          <p>Plataforma de programas académicos (pregrado, posgrado, educación continua) con filtros dinámicos.</p>
           <div class="project-tech">
-            <span class="tech-tag">WordPress</span>
+            <span class="tech-tag">Laravel</span>
             <span class="tech-tag">PHP</span>
             <span class="tech-tag">MySQL</span>
           </div>
         </div>
       </div>
 
+      <!-- Laravel biolinks -->
+      <div class="project-card reveal" data-category="laravel" style="transition-delay:0.4s"
+        data-title="Biolinks Unicatólica"
+        data-desc="Sistema de biolinks institucional desarrollado en Laravel. Centraliza los enlaces y redes de la universidad en una sola página dinámica y administrable."
+        data-url="https://www.unicatolica.edu.co/biolinks/public/"
+        data-tech="Laravel,PHP,MySQL,JS"
+        data-pdf="assets/screenshots/biolinks.pdf">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-tag">Laravel</span>
+          <div class="project-thumb-label">Biolinks</div>
+        </div>
+        <div class="project-info">
+          <h3>Biolinks Unicatólica</h3>
+          <p>Hub de enlaces institucionales centralizado y administrable.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Laravel</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laravel comunicaciones -->
+      <div class="project-card reveal" data-category="laravel" style="transition-delay:0.45s"
+        data-title="Portal de Comunicaciones"
+        data-desc="Sistema interno de comunicaciones institucionales desarrollado en Laravel. Gestión de publicaciones, noticias y contenido editorial con panel de administración."
+        data-url="https://comunicaciones.unicatolica.edu.co/public/"
+        data-tech="Laravel,PHP,MySQL,JS"
+        data-pdf="assets/screenshots/comunicaciones.pdf">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-tag">Laravel</span>
+          <div class="project-thumb-label">Portal Comunicaciones</div>
+        </div>
+        <div class="project-info">
+          <h3>Portal de Comunicaciones</h3>
+          <p>Sistema de gestión editorial y comunicaciones institucionales con panel admin.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Laravel</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laravel digital warden -->
+      <div class="project-card reveal" data-category="laravel" style="transition-delay:0.5s"
+        data-title="Digital Warden"
+        data-desc="Plataforma de gestión digital institucional desarrollada en Laravel. Sistema con autenticación, roles y módulos internos de seguimiento y control."
+        data-url="https://digitalwarden.unicatolica.edu.co/public/"
+        data-tech="Laravel,PHP,MySQL,JS"
+        data-pdf="assets/screenshots/digitalwarden.pdf">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-tag">Laravel</span>
+          <div class="project-thumb-label">Digital Warden</div>
+        </div>
+        <div class="project-info">
+          <h3>Digital Warden</h3>
+          <p>Sistema de gestión y control digital con autenticación y roles de usuario.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Laravel</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laravel digital -->
+      <div class="project-card reveal" data-category="laravel" style="transition-delay:0.55s"
+        data-title="Unicatólica Digital"
+        data-desc="Plataforma de transformación digital universitaria desarrollada en Laravel. Portal con acceso a recursos digitales, servicios en línea y gestión de contenido institucional."
+        data-url="https://digital.unicatolica.edu.co/public/"
+        data-tech="Laravel,PHP,MySQL,JS"
+        data-pdf="assets/screenshots/digital.pdf">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-tag">Laravel</span>
+          <div class="project-thumb-label">Unicatólica Digital</div>
+        </div>
+        <div class="project-info">
+          <h3>Unicatólica Digital</h3>
+          <p>Portal de transformación digital universitaria con recursos y servicios en línea.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Laravel</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vanilla soy digital -->
+      <div class="project-card reveal" data-category="vanilla" style="transition-delay:0.6s"
+        data-title="Soy Digital Unicatólica"
+        data-desc="Microsite desarrollado en HTML, JS y CSS puro para campaña de transformación digital de Unicatólica. Landing con recursos interactivos y accesos a plataformas digitales."
+        data-url="https://unicatolica.edu.co/soydigital/"
+        data-tech="HTML,JS,CSS"
+        data-pdf="assets/screenshots/soydigital.pdf">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-tag">Vanilla</span>
+          <div class="project-thumb-label">Soy Digital</div>
+        </div>
+        <div class="project-info">
+          <h3>Soy Digital</h3>
+          <p>Microsite de campaña de transformación digital con recursos interactivos.</p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">JS</span>
+            <span class="tech-tag">CSS</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
+
+  <!-- PROJECT MODAL -->
+  <div class="project-modal-overlay" id="projectModal">
+    <div class="project-modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-body">
+        <div class="modal-left">
+          <div class="modal-pdf-viewer">
+            <iframe id="modalPdf" src="" title="Capturas del proyecto"></iframe>
+            <div class="modal-pdf-placeholder" id="pdfPlaceholder">
+              <span>Sin capturas disponibles</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-right">
+          <div class="modal-tag" id="modalTag"></div>
+          <h3 class="modal-title" id="modalTitle"></h3>
+          <p class="modal-desc" id="modalDesc"></p>
+          <div class="modal-tech-list" id="modalTech"></div>
+          <a href="#" class="btn btn-primary modal-link" id="modalLink" target="_blank" rel="noopener">Ver proyecto ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- CONTACT -->
   <section id="contact">
